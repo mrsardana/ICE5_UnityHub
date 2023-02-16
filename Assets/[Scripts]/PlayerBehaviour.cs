@@ -48,12 +48,17 @@ public class PlayerBehaviour : MonoBehaviour
         if(other.gameObject.CompareTag("Cloud"))
         {
             //play thunder // take damage
-            print("Colooing cloud");
+            //print("Colooing cloud");
+
+            other.gameObject.GetComponent<AudioSource>().Play();
         }
 
         if (other.gameObject.CompareTag("Island"))
         {
-            print("Clodding Island");
+            //print("Clodding Island");
+
+            other.gameObject.GetComponent<AudioSource>().Play();
+
         }
 
 
