@@ -41,4 +41,22 @@ public class PlayerBehaviour : MonoBehaviour
             transform.position = new Vector2(boundary.left, -4.0f);
         }
     }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Cloud"))
+        {
+            //play thunder // take damage
+            print("Colooing cloud");
+        }
+
+        if (other.gameObject.CompareTag("Island"))
+        {
+            print("Clodding Island");
+        }
+
+
+    }
+
 }
